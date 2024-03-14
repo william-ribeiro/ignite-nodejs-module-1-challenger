@@ -1,0 +1,12 @@
+#DEPENDENCIES
+node_modules
+
+#ENVS
+.env
+
+#BUILD
+build
+
+#DATABASE
+*.db
+
