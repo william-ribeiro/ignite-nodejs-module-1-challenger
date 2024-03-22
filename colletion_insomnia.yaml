@@ -1,0 +1,464 @@
+_type: export
+__export_format: 4
+__export_date: 2024-03-22T00:05:53.765Z
+__export_source: insomnia.desktop.app:v8.6.1
+resources:
+  - _id: req_bf6189a48f2d4a488b75941bea338e56
+    parentId: fld_095d1b04567442d5b70a354b490eaf45
+    modified: 1711065252408
+    created: 1710528915368
+    url: "{{ _.BASE_URL }}/meals"
+    name: Create Meal
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Almoço",
+        	"description": "4",
+        	"userId": "f917d981-ba85-4586-b3cc-ce40788db6da",
+        	"isWihtinTheDiet":true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1710528924215
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_095d1b04567442d5b70a354b490eaf45
+    parentId: wrk_07b5be6f6d214054947daceecfef3742
+    modified: 1710528904701
+    created: 1710528904701
+    name: Meals
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1710528904702
+    _type: request_group
+  - _id: wrk_07b5be6f6d214054947daceecfef3742
+    parentId: null
+    modified: 1710289593015
+    created: 1710289593015
+    name: Ignite Nodejs -Module 02 - challenger
+    description: >-
+      ## Documentção Navedex's 
+
+
+      Abaixo segue organizado todas as rotas utilizada na aplicação para cadastro de usuários, navers e projects.
+    scope: collection
+    _type: workspace
+  - _id: req_471f432935f146b7a6f1e9a04d5003cb
+    parentId: fld_095d1b04567442d5b70a354b490eaf45
+    modified: 1710545341667
+    created: 1710531889692
+    url: "{{ _.BASE_URL }}/meals/2/98b77dc8-72a2-45e4-868c-2d3eb7ec3fcb"
+    name: Update Meal
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "jantar",
+        	"description": "teste",
+        	"isWihtinTheDiet":false
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1710409350475
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3a79d8bd465f4ee5b3cf378e23dde466
+    parentId: fld_095d1b04567442d5b70a354b490eaf45
+    modified: 1710545414290
+    created: 1710545351363
+    url: "{{ _.BASE_URL }}/meals/2/98b77dc8-72a2-45e4-868c-2d3eb7ec3fcb"
+    name: delete Meal
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1710379457040
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1a783571c333415bb44fafa9f5d371df
+    parentId: fld_095d1b04567442d5b70a354b490eaf45
+    modified: 1710544375227
+    created: 1710543799375
+    url: "{{ _.BASE_URL }}/meals/2/98b77dc8-72a2-45e4-868c-2d3eb7ec3fcb"
+    name: Get Meal
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1710349563605
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ab21c7ce90dd45c2a371e2256f0a7db5
+    parentId: fld_095d1b04567442d5b70a354b490eaf45
+    modified: 1711065748695
+    created: 1711065706003
+    url: "{{ _.BASE_URL }}/meals/metrics/f917d981-ba85-4586-b3cc-ce40788db6da"
+    name: Get Metrics
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1710334616887.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0f25a49195884937b1e839a647e9ca96
+    parentId: fld_095d1b04567442d5b70a354b490eaf45
+    modified: 1710544710007
+    created: 1710544659183
+    url: "{{ _.BASE_URL }}/meals/98b77dc8-72a2-45e4-868c-2d3eb7ec3fcb"
+    name: Get Meals
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1710319670170
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_caabfdfdffbb4df082d1ac566dc94137
+    parentId: fld_9c492bc9d61c4db79ea1114634237ea6
+    modified: 1711063369295
+    created: 1710289776735
+    url: "{{ _.BASE_URL }}/users"
+    name: Create User
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "william ribeiro",
+        	"email": "sbrdigital15+16@gmail.com",
+        	"age": 35,
+        	"password":"123456"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1710289776735
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_9c492bc9d61c4db79ea1114634237ea6
+    parentId: wrk_07b5be6f6d214054947daceecfef3742
+    modified: 1710289771701
+    created: 1710289771701
+    name: Users
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1710289771701
+    _type: request_group
+  - _id: req_bcf01f464549420693800b7e95930381
+    parentId: fld_9c492bc9d61c4db79ea1114634237ea6
+    modified: 1711063772524
+    created: 1710381856158
+    url: "{{ _.BASE_URL }}/users/signin"
+    name: SignIn
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	
+        	"email": "sbrdigital15+16@gmail.com",
+        	
+        	"password":"123456"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1710267606360.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_46e1138a24ef453c9a8835ba71976552
+    parentId: fld_9c492bc9d61c4db79ea1114634237ea6
+    modified: 1710529256465
+    created: 1710295759917
+    url: "{{ _.BASE_URL }}/users/d57778bb-11ba-43da-81d0-e18534be1605"
+    name: Update User
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "william luiz",
+        	
+        	"age": 40
+        	
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1710245435986
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8e2ef03fc55d4ca983bfa197cda29447
+    parentId: fld_9c492bc9d61c4db79ea1114634237ea6
+    modified: 1710383823208
+    created: 1710383807062
+    url: "{{ _.BASE_URL }}/users/9f62f579-ab23-4035-834d-cf7c9b9c8e5e"
+    name: Remove User
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1710223265611.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_2c19c10cf62d4cd3b86b7cece0e35a5c
+    parentId: wrk_07b5be6f6d214054947daceecfef3742
+    modified: 1710289593016
+    created: 1710289593016
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: {}
+    color: null
+    isPrivate: false
+    metaSortKey: 1614795235821
+    _type: environment
+  - _id: jar_86b3818070ed457ab5a8869ac10806f6
+    parentId: wrk_07b5be6f6d214054947daceecfef3742
+    modified: 1711065717483
+    created: 1710289593019
+    name: Default Jar
+    cookies:
+      - key: connect.sid
+        value: s%3AFCzqYBnM11WCCxclRzD5PGkwdznth8Rd.mc5jXzlAqNTb95PRs6JC%2Br0tYxfl5mZWINCrQdcMMOM
+        domain: localhost
+        path: /
+        httpOnly: true
+        hostOnly: true
+        creation: 2021-11-20T23:24:31.488Z
+        lastAccessed: 2022-03-18T01:08:03.337Z
+        id: 71812724-ef9b-4de0-9ef6-ce40eff005e1
+      - key: connect.sid
+        value: s%3AlH8tolZxTOD6xMqPx_EC-hxgeFAEb0cr.Npv7UX27Mce5XCqQUjhKQolXCi%2FdNogjdNFfNzWNHQU
+        domain: accounts.google.com
+        path: /
+        httpOnly: true
+        hostOnly: true
+        creation: 2021-11-21T00:31:38.598Z
+        lastAccessed: 2021-11-21T00:31:38.598Z
+        id: ed1efc29-8509-48a1-a940-5f17e73fa8d3
+      - key: __Host-GAPS
+        value: 1:caOrruSVPxejNouulMd4Jgcxz91NrA:rbcRmovHdXrrUuZi
+        expires: 2023-12-07T09:08:18.000Z
+        domain: accounts.google.com
+        path: /
+        secure: true
+        httpOnly: true
+        extensions:
+          - Priority=HIGH
+        hostOnly: true
+        creation: 2021-11-21T00:31:38.599Z
+        lastAccessed: 2021-12-07T09:08:19.130Z
+        id: 5bf2102b-09e3-41a4-bb70-cbbf3ec26de5
+      - key: connect.sid
+        value: s%3An_a7oFxGcf_TbeZjWhVERlC22qHjgJpi.q%2FqZSFqwJ3aJ0K1MGmFoi47sLvnkpLwzJlNhVU7Kf3A
+        domain: api-heelpy.herokuapp.com
+        path: /
+        httpOnly: true
+        hostOnly: true
+        creation: 2021-11-21T01:43:04.796Z
+        lastAccessed: 2022-03-18T01:14:08.120Z
+        id: 7d297465-1b9f-42c0-93da-b1c78c39f820
+      - key: GEM
+        value: CgptaW51dGVtYWlkEMG4mqHZLw==
+        domain: accounts.google.com
+        path: /
+        secure: true
+        httpOnly: true
+        hostOnly: true
+        creation: 2021-12-07T09:08:19.131Z
+        lastAccessed: 2021-12-07T09:08:19.131Z
+        id: f4dbf761-76e0-48d3-b631-97fb8175c257
+      - key: __cf_bm
+        value: iJ2Bmad7YtLedYm3bWlYcg0M009eKy2U2KJ9a5Hh0C8-1689909207-0-AYa/SZWhrqkh7AMvhXCPkrefF5XhEwOv8aYg67sXwucPea29L34ewMU1lNcazIUUDcfwAmYVvAW8ZKBnXqlp2iM=
+        expires: 2023-07-21T03:43:27.000Z
+        domain: onrender.com
+        path: /
+        secure: true
+        httpOnly: true
+        extensions:
+          - SameSite=None
+        hostOnly: false
+        creation: 2023-05-09T22:07:44.782Z
+        lastAccessed: 2023-07-21T03:13:27.963Z
+        id: c574a5d2-e5a5-454e-a532-fa4b10324956
+      - key: _cfuvid
+        value: IX8PKBWwbV5jlp.ny5E49n1ZA5aJQFHKYvPPGRb3JcE-1686087063282-0-604800000
+        domain: onrender.com
+        path: /
+        secure: true
+        httpOnly: true
+        extensions:
+          - SameSite=None
+        hostOnly: false
+        creation: 2023-05-09T22:07:44.782Z
+        lastAccessed: 2023-06-06T21:31:03.307Z
+        id: 31e57c42-5664-4312-8709-c0778a536983
+      - key: sessionId
+        value: 51706aa7-9a8c-4561-8f69-89df1af18726
+        maxAge: 86400
+        domain: localhost
+        path: /
+        hostOnly: true
+        creation: 2024-03-15T22:51:41.973Z
+        lastAccessed: 2024-03-22T00:01:57.482Z
+        id: 8073d307-b742-4e94-aaf1-dc25c97b5680
+    _type: cookie_jar
+  - _id: spc_f6ed64833a70442b8b7929948c573546
+    parentId: wrk_07b5be6f6d214054947daceecfef3742
+    modified: 1710289593037
+    created: 1710289593020
+    fileName: Ignite Nodejs -Module 02 - challenger
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_f6223f8c8c854774a6eba5f96fccd782
+    parentId: env_2c19c10cf62d4cd3b86b7cece0e35a5c
+    modified: 1710289593017
+    created: 1710289593017
+    name: Production
+    data:
+      BASE_URL: https://ignite-nodejs-module-2-classroom.onrender.com
+    dataPropertyOrder:
+      "&":
+        - BASE_URL
+    color: "#ff0000"
+    isPrivate: false
+    metaSortKey: 1615000645494
+    _type: environment
+  - _id: env_0d6be14d9c6041f8af52b40b09ca44c9
+    parentId: env_2c19c10cf62d4cd3b86b7cece0e35a5c
+    modified: 1710289909710
+    created: 1710289593018
+    name: Local
+    data:
+      BASE_URL: http://localhost:4445
+    dataPropertyOrder:
+      "&":
+        - BASE_URL
+    color: "#007bff"
+    isPrivate: false
+    metaSortKey: 1616032935812.5
+    _type: environment

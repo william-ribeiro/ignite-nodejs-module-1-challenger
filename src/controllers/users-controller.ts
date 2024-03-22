@@ -31,7 +31,7 @@ export async function signInController({
   }
 
   const sessionId = randomUUID()
-
+  console.log('userID', user.id)
   await userRepository.update(user.id, { ...user, sessionId })
 
   return sessionId

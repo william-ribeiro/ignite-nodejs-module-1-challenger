@@ -26,6 +26,7 @@ export async function usersRoutes(app: FastifyInstance) {
 
       return reply.status(200).send()
     } catch (err: any | Error) {
+      reply.setCookie('sessionId', '')
       reply.removeHeader('set-cookie')
       const statusCode = parseStatusCodeError(err)
 

@@ -8,6 +8,7 @@ interface IUsersRepository {
   findById(id: string): Promise<User | undefined>
   create(data: CreateUserType): Promise<void>
   update(id: string, data: UpdateUserType): Promise<void>
+  delete(id: string): Promise<void>
 }
 
 export class UserRepository implements IUsersRepository {
@@ -23,16 +24,14 @@ export class UserRepository implements IUsersRepository {
     id: string,
     { name, email, age, password, sessionId }: UpdateUserType,
   ): Promise<void> {
-    await knex('users')
-      .where({ id })
-      .update({
-        name,
-        email,
-        age,
-        password,
-        updated_at: new Date().toISOString(),
-        session_id: sessionId,
-      } as User)
+    await knex('users').where({ id }).update({
+      name,
+      email,
+      age,
+      password,
+      updated_at: new Date().toISOString(),
+      session_id: sessionId,
+    })
   }
 
   async create({ name, age, email, password }: CreateUserType): Promise<void> {
